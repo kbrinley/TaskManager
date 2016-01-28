@@ -1,0 +1,38 @@
+<div>
+	<p>
+		The heart of Kanban for Developers is the Kanban board. Here, tasks can be created, edited, progressed to other stages, deleted, or completed.
+	</p>
+	<img src="images/tour1.png" alt="Kanban board in action" /> 
+</div>
+<div>
+	<p>
+		Task records have a minimal amount of fields for flexibility and speed of entry.
+	</p>
+	<img src="images/tour2.png" alt="Creating a task" />
+</div>
+<div>
+	<p>
+		The goal board allows goals to be created, edited, deleted, or completed and has a similar User Interfaced as the Kanban board for simplicity.
+	</p>
+	<img src="images/tour3.png" alt="Goal board in action" />
+</div>
+<div>
+	<p>
+		Finally, Kanban for Developers offers numerous reports, like the Current Tasks report shown below:
+	</p>
+	<img src="images/tour4.png" alt="Current Tasks Report in action"
+</div>
+<div>
+	<p>
+		Kanban for Developers has reports for:
+		<ul>
+			<li>Current Tasks</li>
+			<li>All Tasks</li>
+			<li>Historic Tasks</li>
+			<li>Current Goals</li>
+			<li>All Goals</li>
+			<li>Daily or Weekly Status Reports</li>
+			<li>Productivity Report</li>
+		</ul>
+	</p>
+</div>

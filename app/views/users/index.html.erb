@@ -1,0 +1,13 @@
+<div id="wide_body" class="admin">
+<h2>All Users</h2>
+
+<% will_paginate %>
+
+<ul>
+	<% @users.each do |user| %>
+		<%= render user %>
+	<% end %>
+</ul>
+
+<% will_paginate %>
+</div>

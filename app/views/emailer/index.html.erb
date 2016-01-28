@@ -1,0 +1,10 @@
+<h1>Send Email</h1>
+	<% form_tag('/emailer/sendmail', :method => :post) do %>
+		<p><%= label_tag "Subject" %>
+		<%= text_field_tag 'subject' %></p>
+		<p><%= label_tag "Recipient" %>:
+		<%= text_field_tag 'recipient' %></p>
+		<p><%= label_tag "Message" %><br/>
+		<%= text_area_tag 'message' %></p>
+		<%= submit_tag "Send" %>
+	<% end %>

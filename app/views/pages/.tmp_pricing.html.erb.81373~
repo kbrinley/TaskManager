@@ -1,0 +1,81 @@
+<div id="wide_body">
+<h2>Pricing for Kanban for Developers</h2>
+<table class="pricing" style="position:relative;top:2em;left:2em;">
+	<tbody>
+		<tr>
+			<td></td>
+			<th scope="col">Premium Team Kanban Board</th>
+			<th scope="col">Team Kanban Board</th>
+			<th scope="col">Premium Kanban Board</th>
+		</tr>
+		<tr>
+			<td colspan='4' style="text-align:center;font-weight:bolder;">Features</td>
+		</tr>
+		<tr class="odd">
+			<th style="column1">Number of User Accounts</th>
+			<td>Up to 25</td>
+			<td>Up to 10</td>
+			<td>1</td>
+		</tr>
+		<tr>
+			<th style="column1">Number of Projects</th>
+			<td>Each user and team can create unlimited projects</td>
+			<td>Each user and team is limited to 4 active projects</td>
+			<td>User is limited to 1 active projects</td>
+		</tr>
+		<tr class="odd">
+			<th style="column1">Reporting</th>
+			<td>Full access to historical and current reporting</td>
+			<td>Full access to historical and current reporting</td>
+			<td>Full access to historical and current reporting</td>
+		</tr>
+		<tr>
+			<th style="column1">Access to Tasks and Goals</th>
+			<td>Complete access and integration with Tasks and Goals</td>
+			<td>Complete access and integration with Tasks and Goals</td>
+			<td>Complete access and integration with Tasks and Goals</td>
+		</tr>
+		<tr class="odd">
+			<th style="column1">Access to Project History</th>
+			<td>Each user can view complete project history</td>
+			<td>Each user can view complete project history</td>
+			<td>User can view complete project history</td>
+		</tr>
+		<tr>
+			<td colspan='4' style="text-align:center;font-weight:bolder;">Pricing</td>
+		</tr>
+		<!--<tr class="odd">
+			<th style="column1">Minimum Plan</th>
+			<td>$199.97 for 3 months</td>
+			<td>$89.97 for 3 months</td>
+			<td>$4.97 a month</td>
+		</tr>
+		<tr>
+			<th style="column1">6 Month Plan</th>
+			<td>$349.97 for 6 months (a savings of $49.97</td>
+			<td>$169.97 for 6 months (a savings of $9.97</td>
+			<td>$24.85 for 6 months (a savings of $4.97)</td>
+		</tr>-->
+		<tr class="odd">
+			<th style="column1">Annual Plan</th>
+			<td>Coming Soon</td>
+			<td>Coming Soon</td>
+			<td>$9.95 for 12 months</td>
+		</tr>
+		<tr>
+			<th style="column1"></th>
+			<td><em><!--<%= link_to "Sign up for Premium Team account now!", signup_path %>--><a href="http://eepurl.com/2Zsk">Notify me when this plan is available</a></em></td>
+			<td><em><!--<%= link_to "Sign up for Team account now!", signup_path %></em>--><a href="http://eepurl.com/2Zsk">Notify me when this plan is available</a></td>
+			<td><em><%= link_to "Sign up for Premium account now!", signup_path %></em></td>
+		</tr>
+	</tbody>
+</table>
+</div>
+<br />
+<br />
+<br />
+<table style="width:100%;">
+	<tr>
+		<td><%= render '/layouts/listsignup' %></td>
+	</tr>
+</table>

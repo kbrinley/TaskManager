@@ -1,0 +1,13 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  description: MyString
+  size: 1
+  listorder: 1
+  location: MyString
+
+two:
+  description: MyString
+  size: 1
+  listorder: 1
+  location: MyString

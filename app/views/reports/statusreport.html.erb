@@ -1,0 +1,17 @@
+<div id="normal_body">
+<div class="statusreport">
+		<% form_tag('/reports/generatestatusreport/' + @current_user.id.to_s, :method => :post) do %>
+		<div id="selectoptions" class="field">
+			<%= label_tag "Report Time Frame" %>
+			<%= select :timespan, :selected, ["Daily", "Weekly"] %>
+		</div>
+		<div class="field">
+			<%= label_tag "Status Description" %><br />
+			<%= text_area_tag "usernotes", nil, :rows => 5, :cols => 50 %>
+		</div>
+		<div class="actions">
+			<%= submit_tag "Generate Report" %>
+		</div>
+		<% end %>
+</div>
+</div>

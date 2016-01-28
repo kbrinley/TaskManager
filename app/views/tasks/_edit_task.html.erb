@@ -1,0 +1,23 @@
+<div class="edit">
+	<% form_tag('/tasks/', :method => :put) do %>
+		<div id="selectoptions" class="field">
+			<%= select :edit_task, :category_id, @categories.map {|c| [c.label, c.id]} %>
+		</div>
+		<div class="field">
+			<%= label_tag "description" %>
+			<%= text_area_tag "edit_task[description]", nil, :rows => 5, :cols => 50 %>
+		</div>
+		<div class="field percentcomplete">
+			<%= label_tag "Percent Complete" %>
+			<%= text_field_tag "edit_task[percentcomplete]", nil, :maxlength => 3, :size => 3 %>
+		</div>
+		<div class="actions">
+			<%= submit_tag "Edit Task", :class => "button pill"%>
+			<div id="copygoalbuttons" class="menu">
+				<button class="left pill button copygoal" id="btncreaterelatedgoal1" goaltype_id="1">Copy to Daily Goal</button>
+				<button class="middle pill button copygoal" style="margin-right: -5px; margin-left: -5px;" id="btncreaterelatedgoal2" goaltype_id="2">Copy to Weekly Goal</button>
+				<button class="right pill button copygoal" id="btncreaterelatedgoal3" goaltype_id="3">Copy to Monthly Goal</button>
+			</div>
+		</div>
+	<% end %>
+</div>

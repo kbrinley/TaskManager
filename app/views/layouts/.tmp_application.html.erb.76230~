@@ -1,0 +1,24 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+	<%= render 'layouts/header' %>
+	<body>
+		<div class="wrap">
+			<div class="header">
+				<div class="logo">
+					<h1>Kanban for Developers</h1>
+					<h2>Freeing up Whiteboards everywhere</h2>
+				</div>
+				<%= render 'layouts/menu' %>
+			</div>
+			<div id="content" class="body">
+				<%= yield %>
+				<!--<div class="push"><!-- --><!--</div>-->
+			</div>
+		</div>
+		<div class="footer">
+			<div class="mailinglist"><%= render '/layouts/listsignup' %></div>
+			<div class="linklist"><%= render 'layouts/footerlinks' %></div>
+			<%= render '/layouts/info' %>
+		</div>
+	</body>
+</html>

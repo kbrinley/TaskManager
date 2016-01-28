@@ -1,0 +1,23 @@
+		<div class="menu">
+			<ul class="navigation">
+					
+				<% if signed_in? %>
+					<li><%= link_to "My Tasks", {:controller => "tasks", :action => "index", :id => @current_user.id} %></li>
+					<li><%= link_to "My Goals", {:controller => "goals", :action => "index", :id => @current_user.id} %></li>
+					<li><%= link_to "Reports", {:controller => "reports", :action => "index", :id => @current_user.id} %></li>
+					<li><%= link_to "My User Info", {:controller => "users", :action => "show", :id => @current_user.id} %></li>
+					<li><%= link_to "Sign out", signout_path %></li>
+				<% else %>
+					<li><%= link_to "Home", root_path %></li>
+					<li><%= link_to "Tour Product", tour_path %></li>
+					<li><%= link_to "Testimony", testimonials_path %></li>
+					<li><%= link_to "FAQ", faq_path %></li>
+					<li><%= link_to "Pricing", pricing_path %></li>
+					<li><%= link_to "Sign up", signup_path %></li>
+					<li><%= link_to "Sign in", signin_path %></li>
+				<% end %>
+				<li><%= link_to "Help", help_path %></li>
+				<li><a href="/blog">Our Blog</a></li>
+			</ul>
+		</div>
+		<div class="push"></div>

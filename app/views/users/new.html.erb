@@ -1,0 +1,45 @@
+<div id="wide_body">
+	<div class="center"><h3>Sign up for Kanban for Developers</h3></div>
+	<div>
+		<div style="float:left;width:40%;">
+			<h4>Pay Now</h4>
+			For 12 months of access for $9.95, 
+			<br/>
+			plus 120 days free:
+			<form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+				<input type="hidden" name="cmd" value="_s-xclick">
+				<input type="hidden" name="hosted_button_id" value="XVUMH7KFEDSVW">
+				<input type="image" src="https://www.paypal.com/en_US/i/btn/btn_subscribeCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+				<img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1">
+			</form>
+		</div>
+		<div style="float:right;width:40%;">
+			<h4>Get a free 120 day trial and pay later</h4>
+			<% form_for(@user) do |f| %>
+			<%= f.error_messages %>
+			<div class="field">
+				<%= f.label "Email (This will be your login name and is case sensitive)" %><br />
+				<%= f.text_field :email %>
+			</div>
+			<div class="field">
+				<%= f.label :password %><br />
+				<%= f.password_field :password %>
+			</div>
+			<div class="field">
+				<%= f.label :password_confirmation, "Confirmation" %><br />
+				<%= f.password_field :password_confirmation %>
+			</div>
+			<div class="actions">
+				<%= f.submit "Sign up", :class => "button pill" %>
+			</div>
+			<% end %>	
+		</div>
+		<div style="float:left;width:auto;padding:0em 2em 0em 2em;margin:0 auto;">	
+			<h4>Or</h4>
+		</div>
+	</div>
+	<div style="clear:both;height:10px;border:none;font-size:10px;"><!-- Forces rest of text to bottom of page-->&nbsp;</div>
+	<div>
+		<p>If you would to join our mailing list and receive product updates, <a href="http://eepurl.com/2Zsk">please signup here.</a></p>
+	</div>
+</div>

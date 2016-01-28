@@ -1,0 +1,15 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  user_id: 1
+  label: MyString
+  size: 1
+  listorder: 1
+  location: MyString
+
+two:
+  user_id: 1
+  label: MyString
+  size: 1
+  listorder: 1
+  location: MyString

@@ -1,0 +1,67 @@
+<h2>Pricing for Kanban for Developers</h2>
+<table style="position:relative;top:2em;left:2em;">
+	<tbody>
+		<tr>
+			<td>Premium Team Kanban Board</td>
+			<td>Team Kanban Board</td>
+			<td>Premium Kanban Board</td>
+		</tr>
+		<tr>
+			<td colspan='4' style="text-align:center;font-weight:bolder;">Features</td>
+		</tr>
+		<tr>
+			<td>Up to 25 seperate User Accounts</td>
+			<td>Up to 10 seperate User Accounts</td>
+			<td>1 User Account</td>
+		</tr>
+		<tr>
+			<td>Full access to historical and current reporting</td>
+			<td>Full access to historical and current reporting</td>
+			<td>Full access to historical and current reporting</td>
+		</tr>
+		<tr>
+			<td>Each user and team can create unlimited projects</td>
+			<td>Each user and team is limited to 4 active projects</td>
+			<td>User is limited to 1 active projects</td>
+		</tr>
+		<tr>
+			<td>Complete access and integration with Tasks and Goals</td>
+			<td>Complete access and integration with Tasks and Goals</td>
+			<td>Complete access and integration with Tasks and Goals</td>
+		</tr>
+		<tr>
+			<td>Each user can view complete project history</td>
+			<td>Each user can view complete project history</td>
+			<td>User can view complete project history</td>
+		</tr>
+		<tr>
+			<td colspan='4' style="text-align:center;font-weight:bolder;">Pricing</td>
+		</tr>
+		<tr>
+			<td>$199.97 for 3 months</td>
+			<td>$89.97 for 3 months</td>
+			<td>$4.97 a month</td>
+		</tr>
+		<tr>
+			<td>$349.97 for 6 months (a savings of $49.97</td>
+			<td>$169.97 for 6 months (a savings of $9.97</td>
+			<td>$24.85 for 6 months (1 free month)</td>
+		</tr>
+		<tr>
+			<td>$649.97 for 12 months (a savings of $149.91)</td>
+			<td>$324.97 for 12 months (a savings of $34.91)</td>
+			<td>$44.73 for 12 months (3 free months)</td>
+		</tr>
+		<tr>
+			<td><%= link_to "Sign up for Premium Team account now!", signup_path %></td>
+			<td><%= link_to "Sign up for Team account now!", signup_path %></td>
+			<td><%= link_to "Sign up for Premium account now!", signup_path %></td>
+		</tr>
+	</tbody>
+</table>
+<script>
+	$(document).ready(function() {
+		$('div.salesimage').css("background", "url('/images/sales_price.png') no-repeat");	
+	});
+	
+</script>

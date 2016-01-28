@@ -1,0 +1,16 @@
+<div class="edit">
+	<% form_tag('/goals/', :method => :put) do %>
+		<div class="field">
+			<%= label_tag "description" %>
+			<%= text_area_tag "edit_goal[description]", nil, :rows => 5, :cols => 50 %>
+		</div>
+		<div class="field percentcomplete">
+			<%= label_tag "Percent Complete" %>
+			<%= text_field_tag "edit_goal[percentcomplete]", nil, :maxlength => 3, :size => 3 %>
+		</div>
+		<div class="actions">
+			<%= submit_tag "Edit Goal", :class => "button pill" %>
+			<button class="button pill" id="btncreaterelatedtask">Copy to Task</button>
+		</div>
+	<% end %>
+</div>

@@ -1,0 +1,49 @@
+<div id="task_<%= task.id %>" class="taskrecord">
+	<div class="hidden percentcomplete"><%= h task.percentcomplete %></div>
+	<div class="taskdata"><%= h task.description %></div>
+	<div class="taskbuttons">
+		<div class="editbutton">
+			<button id="btnedittask" class="button small" onclick="show_edit_task(this, <%= task.id %>, '<%= h task.escaped_description %>');">E</button>
+		</div>
+		<% if task.category.label == "Delivered" %>
+			<div class="completecontainer">
+				<button class="completebutton button small negative" style="" task_id="<%= task.id %>">C</button>
+			</div>
+			<div class="deletecontainer" style="display:none;">
+				<button class="deletebutton button small negative" style="" task_id="<%= task.id %>">X</button>
+			</div>
+		<% else %>
+			<div class="completecontainer" style="display:none;">
+				<button class="completebutton button small negative" style="" task_id="<%= task.id %>">C</button>
+			</div>
+			<div class="deletecontainer">
+				<button class="deletebutton button small negative" style="" task_id="<%= task.id %>">X</button>
+			</div>
+		<% end %>
+	</div>
+</div>
+<!--
+<table id="task_<%= task.id %>" class="taskrecord">
+	<tr style="height:24px;">
+		<td class="showtask"><div class="taskdata"><%= h task.description %></div><div class="overflow">...</div><div class="hidden percentcomplete"><%= h task.percentcomplete %></div></td>
+		<td class="taskaction"><button id="btnedittask" class="button small" onclick="show_edit_task(this, <%= task.id %>, '<%= h task.escaped_description %>');">E</button></td>
+		<td class="taskaction">
+		<% if task.category.label == "Delivered" %>
+			<div id="completecontainer">
+				<button class="completebutton button small negative" style="" task_id="<%= task.id %>">C</button>
+			</div>
+			<div id="deletecontainer" style="display:none;">
+				<button class="deletebutton button small negative" style="" task_id="<%= task.id %>">X</button>
+			</div>
+		<% else %>
+			<div id="completecontainer" style="display:none;">
+				<button class="completebutton button small negative" style="" task_id="<%= task.id %>">C</button>
+			</div>
+			<div id="deletecontainer">
+				<button class="deletebutton button small negative" style="" task_id="<%= task.id %>">X</button>
+			</div>
+		<% end %>
+		</td>
+	</tr>
+</table>
+-->

@@ -1,0 +1,18 @@
+<div class="pagebody">
+<p>Kanban for Developers sitemap</p>
+<p>
+	<ul>
+		<li><%= link_to "Home", root_path %></li>
+		<li><%= link_to "Tour Product", tour_path %></li>
+		<li><%= link_to "Testimony", testimonials_path %></li>
+		<li><%= link_to "FAQ", faq_path %></li>
+		<li><%= link_to "Pricing", pricing_path %></li>
+		<li><%= link_to "Sign up", signup_path %></li>
+		<li><%= link_to "Sign in", signin_path %></li>
+		<li><%= link_to "Help", help_path %></li>
+		<li><a href="/blog">Kanban for Developers Blog</a></li>
+		<li><%= link_to "Contact Us", contact_path %></li>
+		<li><%= link_to "About Us", aboutus_path%></li>
+	</ul>
+</p>
+</div>

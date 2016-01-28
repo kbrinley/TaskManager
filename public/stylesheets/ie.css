@@ -1,0 +1,52 @@
+.container { 
+	display:inline; 
+}
+
+.taskdata {
+	display:inline;
+}
+
+.taskaction {
+	display:inline;
+	position:fixed;
+	top:5px;
+	vertical-align:middle;
+	height:24px;
+	max-height:24px;
+}
+
+.taskrecord {
+
+}
+
+.taskrecord td {
+
+}
+
+.taskrecord td div {
+	vertical-align:middle;
+}
+
+.completecontainer {
+	height:24px;
+	display:inline;
+	overflow:hidden;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:2px;
+}
+
+.deletecontainer {
+	height:24px;
+	display:inline;
+	overflow:hidden;
+}
+
+#info_box {
+	position:relative;
+	top:5px;
+	
+}
+
+#info_padding {
+	padding: 0px 0px 75px 0px;
+}

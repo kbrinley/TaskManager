@@ -1,0 +1,65 @@
+<h2>Pricing for Kanban for Developers</h2>
+<table style="position:relative;top:2em;left:2em;">
+	<tbody>
+		<tr>
+			<td>Premium Team Kanban Board</td>
+			<td>Team Kanban Board</td>
+			<td>Premium Kanban Board</td>
+			<td>Basic Kanban Board</td>
+		</tr>
+		<tr>
+			<td colspan='4' style="text-align:center;font-weight:bolder;">Features</td>
+		</tr>
+		<tr>
+			<td>Up to 25 seperate User Accounts</td>
+			<td>Up to 10 seperate User Accounts</td>
+			<td>1 User Account</td>
+			<td>1 Basic User Account</td>
+		</tr>
+		<tr>
+			<td>Full access to historical and current reporting</td>
+			<td>Full access to historical and current reporting</td>
+			<td>Full access to historical and current reporting</td>
+			<td>No reporting</td>
+		</tr>
+		<tr>
+			<td>Each user and team can create unlimited projects</td>
+			<td>Each user and team is limited to 4 active projects</td>
+			<td>User is limited to 3 active projects</td>
+			<td>User is limited to 1 active project</td>
+		</tr>
+		<tr>
+			<td>Complete access and integration with Tasks and Goals</td>
+			<td>Complete access and integration with Tasks and Goals</td>
+			<td>Complete access and integration with Tasks and Goals</td>
+			<td>Provides access only to Tasks</td>
+		</tr>
+		<tr>
+			<td>Each user can view complete project history</td>
+			<td>Each user can view complete project history</td>
+			<td>User can view complete project history</td>
+			<td>Provides no historical view</td>
+		</tr>
+		<tr>
+			<td colspan='4' style="text-align:center;font-weight:bolder;">Pricing</td>
+		</tr>
+		<tr>
+			<td>$299.97 for 3 months</td>
+			<td>$149.97 for 4 months</td>
+			<td>$7.97 a month</td>
+			<td>Free (ad supported)</td>
+		</tr>
+		<tr>
+			<td>$549.97 for 6 months (a savings of $xx.xx</td>
+			<td>$274.97 for 6 months (a savings of $xx.xx</td>
+			<td>$39.97 for 6 months (a savings of $6.85)</td>
+			<td>Free (ad supported)</td>
+		</tr>
+		<tr>
+			<td>$997.97 for 12 months (a savings of $xx.xx)</td>
+			<td>$499.97 for 12 months (a savings of $xx.xx)</td>
+			<td>$69.97 for 12 months (a savings of $25.67)</td>
+			<td>Free (ad supported)</td>
+		</tr>
+	</tbody>
+</table>

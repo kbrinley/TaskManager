@@ -1,0 +1,12 @@
+<table id="goal_<%= goal.id %>" class="taskrecord goalrecord">
+	<tr>
+		<td><div class="goaldata"><%= h goal.description %></div><div class="hidden percentcomplete"><%= h goal.percentcomplete %></div></td>
+		<td class="taskaction"><button id="btnedittask" class="goaledit button small" onclick="show_edit_goal(<%= goal.id %>, '<%= goal.escaped_description %>');">E</button></td>
+		<td class="taskaction">
+			<button class="goalcompletebutton button small negative" goal_id="<%= goal.id %>">C</button>
+		</td>
+		<td class="taskaction">
+			<button class="goaldeletebutton button small negative" goal_id="<%= goal.id %>">X</button>
+		</td>
+	</tr>
+</table>

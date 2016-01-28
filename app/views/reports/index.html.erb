@@ -1,0 +1,38 @@
+<div id="normal_body">
+<% if (@user.premiumaccount) %>
+<table class="reports">
+	<thead>
+		<th>Task Reports</th>
+		<th>Goal Reports</th>
+		<th>Misc. Reports</th>
+	</thead>
+	<tbody>
+		<tr>
+			<td><%= link_to "Current Tasks", {:controller => "reports", :action => "currenttasks", :id => @current_user.id } %><img class="help" alt="<%= ReportsHelpText('Current Tasks') %>" src="/images/inline_help_small_t.png" /></td>
+			<td><%= link_to "Current Goals", {:controller => "reports", :action => "currentgoals", :id => @current_user.id } %><img class="help" alt="<%= ReportsHelpText('Current Goals') %>" src="/images/inline_help_small_t.png" /></td>
+			<td><%= link_to "Status Report", {:controller => "reports", :action => "statusreport", :id => @current_user.id }%><img class="help" alt="<%= ReportsHelpText('Status Report') %>" src="/images/inline_help_small_t.png" /></td>
+		</tr>
+		<tr>
+			<td><%= link_to "All Tasks Report", {:controller => "reports", :action => "alltasks", :id => @current_user.id } %><img class="help" alt="<%= ReportsHelpText('All Tasks Report') %>" src="/images/inline_help_small_t.png" /></td>
+			<td><%= link_to "All Goals Report", {:controller => "reports", :action => "allgoals", :id => @current_user.id } %><img class="help" alt="<%= ReportsHelpText('All Goals Report') %>" src="/images/inline_help_small_t.png" /></td>
+			<td><%= link_to "Productivity Report", {:controller => "reports", :action => "statistics", :id => @current_user.id } %><img class="help" alt="<%= ReportsHelpText('Productivity Report') %>" src="/images/inline_help_small_t.png" /></td>
+		</tr>
+		<tr>
+			<td><%= link_to "Historical Task Report", {:controller => "reports", :action => "historictasks", :id => @current_user.id } %><img alt="<%= ReportsHelpText('Historical Task Report') %>" src="/images/inline_help_small_t.png" /></td>
+			<td></td>
+			<td>
+				<% if (@user.adminaccount) %>
+					<%= link_to "All Users", {:controller => "reports", :action => "users", :id => @current_user.id } %>
+					<img class="help" alt="An Admin only report that lists all of the users within the system." src="/images/inline_help_small_t.png" />
+				<% end %>
+			</td>
+		</tr>
+	</tbody>
+</table>
+<% else %>
+<div class="notice">
+	You must have a Premium account to view Reports. Sign up for a Premium account 
+	<%= link_to "here", buypremium_path %>
+</div>
+<% end %>
+</div>

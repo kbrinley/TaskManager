@@ -1,0 +1,224 @@
+/* Header Styles */
+div.header {
+	background: #081472; /*#bf4b30;*/
+	color: #ffe100;
+	padding: 5px 0 5px 5px;
+	margin: 0;
+	border-bottom:groove 1px;
+	line-height: 3em;
+}
+
+div.logo {
+	padding: 0 0 0 125px;
+	background: url('/images/Logo_100.png') no-repeat;
+	height:100px;
+	clear: right;
+	font-family:'Podkova',Times New Roman,serif;
+	font-weight:bold;
+}
+
+.menu {
+	position: absolute;
+	top: 20px;
+	right: 0;
+	font-family:"Arial Rounded MT Bold",Arial,sans-serif;
+}
+
+.navigation {
+	padding:0px;
+	margin:0px;
+	font-size:0px; /* Oddly, forces menu together */
+	list-style-type:none;
+}
+
+.navigation li {
+	font-size:12pt;
+	font-weight:bold;
+	color:#f5e848;
+	display:inline-block;
+	padding:0px;
+	margin:0px;
+	text-align:center;
+	vertical-align:middle;
+}
+
+/* Footer Styles */
+.footer {
+	background: #ffee73 url('/images/thumbtack_small.png') no-repeat center top; /*#bf4b30;*/
+	color: #ffe100;
+	height: 380px;
+	margin-top: -325px;
+	border-top: ridge 1px;
+	width: 100%;
+	position: relative;
+	clear: both;
+}
+
+.mailinglist {
+	width: 420px;
+	float: left;
+}
+
+/* Perhaps rearrange so layout is */
+/**          .linklist           **
+ *  							 **
+ *  .mailinglist		.news    **
+ *  					.contact **
+ */
+.linklist {
+	/*float: center;*/
+	text-align: center;
+	/*width: 380px; *//* Was 380px. For 1024x768 screens, #news and #contact would hang off.*/
+	display: block;
+}
+
+#footerlinks {
+	list-style-type: none;
+	padding-top: 3em;
+}
+
+#footerlinks li {
+	display:-moz-inline-box; 
+	-moz-box-orient:vertical;
+	display:inline-block; 
+	vertical-align:top; 
+}
+
+#footerlinks li > * {
+	display: table;
+	table-layout: fixed;
+	width: 90px;
+	overflow: hidden;
+}
+
+#footerlinks li a {
+	color: #2e3884;
+	text-decoration: none;
+}
+
+#footerlinks li a:visited {
+	color: #8f04a8;
+}
+
+#footerlinks li a:hover {
+	color: #717dd7;
+}
+
+#news {
+	float: right;
+	width: 420px;	
+	display: inline-block;
+}
+
+#news h3 {
+	padding: 5px 10px 0px 10px;
+}
+
+#news p {
+	padding: 10px;
+}
+
+#contact {
+	float: right;
+	width: 420px;
+	display: inline-block;
+}
+
+#contact img {
+	padding: 10px 10px 20px 10px;
+}
+
+/* Generic Content Styles */
+#content {
+	padding: 50px 10px 300px 10px;
+	text-align: center;
+	margin: auto;
+	overflow: auto;
+}
+
+/* Specific Styles for Specific pages */
+
+/* Tour page */
+.tourbody {
+	text-align: center;
+	font-size:large;
+	font-weight:bold;	
+	line-height: 1.4em;
+}
+
+.tourbody img {
+	margin: .5em 0;
+}
+
+#content #testimonials {
+	/* Temporary style */
+	width: 600px;
+	padding: 35px 10px 20px 10px;
+	background: #ffffff url('/images/thumbtack_small.png') no-repeat top;
+	margin: auto;
+}
+
+/* Pricing page */
+table.pricing {  
+	width:90%;
+	border-top:1px solid #e5eff8;
+	border-right:1px solid #e5eff8;
+	margin:1em auto;
+	border-collapse:collapse;
+	font-size:smaller;
+}
+
+table.pricing tr td {
+	background:#d4d9fe;
+	color:#678197;
+	border-bottom:1px solid #e5eff8;
+	border-left:1px solid #e5eff8;
+	padding:.3em 1em;
+	text-align:center;	
+}
+
+table.pricing tr th {
+	background:#d4d9fe;
+	color:#678197;
+	border-bottom:1px solid #e5eff8;
+	border-left:1px solid #e5eff8;
+	padding:.3em 1em;
+	text-align:center;	
+}
+
+table.pricing tr.odd td {
+	background:#f7fbff;
+}
+
+table.pricing tr.odd .column1 {
+	background:#f4f9fe;
+ }
+
+.column1 {
+	background:#f9fcfe;
+ }
+ 
+table.pricing thead th {
+	background:#f4f9fe;
+	text-align:center;
+	font:bold 1.2em/2em "Century Gothic","Trebuchet MS",Arial,Helvetica,sans-serif;
+	color:#66a3d3;
+}
+
+table.pricing tfoot th {
+	background:#f4f9fe;
+	text-align:center;
+}
+
+table.pricing tfoot th strong {
+	font:bold 1.2em "Century Gothic","Trebuchet MS",Arial,Helvetica,sans-serif;
+	margin:.5em .5em .5em 0;
+	color:#66a3d3;
+}
+
+table.pricing tfoot th em {
+	color:#f03b58;
+	font-weight: bold;
+	font-size: 1.1em;
+	font-style: normal;
+}

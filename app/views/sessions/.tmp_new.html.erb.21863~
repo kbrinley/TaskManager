@@ -1,0 +1,25 @@
+<div class="pagebody">
+<h2>Sign in</h2>
+
+<% form_for(:session, :url => sessions_path) do |f| %>
+	<%= f.error_messages %>
+	<table>
+		<tr>
+			<td><%= f.label :email %></td>
+			<td><%= f.text_field :email %></td>
+			<td><%= f.label "(case sensitive)"%></td>
+		</tr>
+		<tr>
+			<td><%= f.label :password %></td>
+			<td><%= f.password_field :password %></td>
+			<td><!--<%= f.label "(case sensitive)"%>--></td>
+		</tr>
+	</table>
+	<div class="actions">
+		<%= f.submit "Sign in", :class => "button pill" %>
+	</div>
+<% end %>
+
+<p>New user? <%= link_to "Sign up now!", signup_path %></p>
+<p><%= link_to "Forgot your password?", forgot_path %></p>
+</div>

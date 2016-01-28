@@ -1,0 +1,42 @@
+<head>
+    <meta name="keywords" content="kanban, kanban developers, kanban software, task board" />
+    <meta name="description" content="Manage Development tasks better" />
+    <meta name="author" content="Sand Bridge Software" />
+    <meta name="copyright" content="September 2010" />
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+    <title><%= @title %></title>
+    <link href='http://fonts.googleapis.com/css?family=Muli' rel='stylesheet' type='text/css' />
+    <link href='../../stylesheets/site.css' rel='stylesheet' type='text/css' />
+    <% if ! signed_in? %>
+    <link href='../../stylesheets/sales.css' rel='stylesheet' type='text/css' />
+    <% else %>
+    <link href='../../stylesheets/app.css' rel='stylesheet' type='text/css' />
+    <% end %>
+    <link href='../../stylesheets/ui-darkness/jquery-ui-dark.css' rel='stylesheet' type='text/css' />
+    <link href='../../stylesheets/css3buttons.css' rel='stylesheet' type='text/css' />
+    <link href='../../stylesheets/jquery.jb.shortscroll.css' rel='stylesheet' type='text/css' />
+    <link type="image/gif" rel="SHORTCUT ICON" href="../../images/Logo_small.gif" />
+    <!--[if lte IE 7]>
+        <%= stylesheet_link_tag 'ie', :media => 'screen' %>
+        <style>
+        </style>
+    <![endif]-->
+    <script>
+    </script>
+    <script type="text/javascript">
+        // Google Anayltics code (as if you didn't know.
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-18640295-1']);
+        _gaq.push(['_trackPageview']);
+        
+        (function(){
+            var ga = document.createElement('script');
+            ga.type = 'text/javascript';
+            ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(ga, s);
+        })();
+        
+    </script>
+</head>

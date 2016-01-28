@@ -1,0 +1,31 @@
+<table class="taskrecord" style="height:24px;">
+	<tr style="height:24px;">
+		<td class="showtask" style="height:24px;">
+			<div class="taskdata"><!-- Text goes here --></div>
+			<div class="overflow">...</div>
+		</td>
+		<td style="height:24px;" class="taskaction">
+			<button id="btnedittask" onclick="show_edit_task(this, <!-- id -->, '<!-- Text goes here -->');">E</button>
+		</td>
+		<td style="height:24px;" class="taskaction">
+			<div id="completecontainer" style="display:none;">
+				<form method="post" action="/tasks/complete/<!-- id -->" class="button-to">
+					<div>
+						<input onclick="return confirm('Are you sure you want to Complete this Task?');" type="submit" value="C" />
+						<input name="authenticity_token" type="hidden" value="<!-- Authenticity Token -->" />
+					</div>
+				</form>
+			</div>
+			<div id="deletecontainer">
+				<form method="post" action="/tasks/<!-- id -->" class="button-to">
+					<div>
+						<input name="_method" type="hidden" value="delete" />
+						<input onclick="return confirm('Are you sure you want to delete this Task?');" type="submit" value="X" />
+						<input name="authenticity_token" type="hidden" value="<!-- Authenticity Token -->" />
+					</div>
+				</form>
+			</div>
+		
+		</td>
+	</tr>
+</table>

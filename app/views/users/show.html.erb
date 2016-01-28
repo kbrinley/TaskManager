@@ -1,0 +1,37 @@
+<div class="pagebody">
+	<% if (@user.account_expire_soon?) %>
+	<div id="accountwarning">
+		<div>
+			Your account is set to expire in <% distance_of_time_in_words(Time.now, @user.accountexpiration) %>. Please renew your account today:
+		</div> 
+		<div style="">
+			<h4>For 12 months of access for $9.95, </h4>
+			<br/>
+			<form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+				<input type="hidden" name="cmd" value="_s-xclick">
+				<input type="hidden" name="hosted_button_id" value="XVUMH7KFEDSVW">
+				<input type="image" src="https://www.paypal.com/en_US/i/btn/btn_subscribeCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+				<img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1">
+			</form>
+		</div>
+	</div>
+	<br /><br />
+	<% end %>
+	
+	<!--<p><%= (@user.email) %></p>-->
+	
+	<div class="dashboard">
+		<div class="inprogress"><h2>Tasks</h2><%= render @inprogress_category %></div>
+		<div class="dailygoals"><h2>Goals</h2><%= render @goaltypes %></div>
+	</div>	
+	<div class="useredits">
+		<ul class="navigation">
+		<% if (@current_user.id == @user.id) %>
+		<li class="left pill button"><%= link_to "Edit My Task Categories", {:controller => "categories", :action => "index", :id => @current_user.id} %></li>
+		<li class="right pill button"><%= link_to "Edit My User Details", {:controller => "users", :action=> "edit", :id => @current_user.id} %></li>
+		<% else %>
+		<li class="pill button"><%= link_to "Edit My User Details", {:controller => "users", :action=> "edit", :id => @current_user.id} %></li>
+		<% end %>
+		</ul>
+	</div>
+</div>

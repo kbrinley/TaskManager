@@ -1,0 +1,14 @@
+<div class="container goalcontainer" goaltype_id="<%= goaltype.id %>">
+	<div class="label"><%= h goaltype.label %> <img class="help" alt="<%= GoalTypeHelpText(goaltype.label) %>" src="/images/inline_help_small_t.png" /></div>
+	<div class="goals">
+	<% if goaltype.label == 'Daily' %>
+		<%= render @dailygoals unless @dailygoals.nil? %>
+	<% elsif goaltype.label == 'Weekly' %>
+		<%= render @weeklygoals unless @weeklygoals.nil? %>
+	<% elsif goaltype.label == 'Monthly' %>
+		<%= render @monthlygoals unless @monthlygoals.nil? %>
+	<% else %>
+		<%= render @goals %>
+	<% end %>
+	</div>
+</div>

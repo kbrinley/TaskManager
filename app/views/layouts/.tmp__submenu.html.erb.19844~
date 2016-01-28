@@ -1,0 +1,7 @@
+		<div class="menu">
+			<ul class="navigation">
+				<% if signed_in? %>
+
+				<% end %>				
+			</ul>
+		</div>

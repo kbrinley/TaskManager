@@ -1,0 +1,13 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  user_id: 1
+  goaltype_id: 1
+  description: MyString
+  datecompleted: 2010-06-04 23:20:33
+
+two:
+  user_id: 1
+  goaltype_id: 1
+  description: MyString
+  datecompleted: 2010-06-04 23:20:33

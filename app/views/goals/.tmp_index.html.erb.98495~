@@ -1,0 +1,80 @@
+<div class="taskheader">
+	<span>You currently have a total of <%= @goals.count %> Tasks</span>
+	<button id="btnshownewgoal" onclick="show_new_goal();">Create New Goal</button>
+</div>
+<div class='new_goal' style="display:none;">
+	<%= render 'goals/new_goal' %>
+</div>
+<div class="edit_goal" style="display:none;">
+	<%= render 'goals/edit_goal' %>
+</div>
+<div class="whiteboard">
+<% if @goaltypes.empty? %>
+	<h2>Error! No Goal Types defined!</h2>
+<% else %>
+	<%= render @goaltypes %>
+<% end %>
+</div>
+<script>
+	$(document).ready(function() {
+		$('div.new_goal').dialog({
+			autoOpen: false,
+			title: "Create a New Goal",
+			height: 350,
+			width: 600,
+			close: function(event, ui) {$('#btnshownewgoal').css("display", "");}
+		});
+		
+		$('div.edit_goal').dialog({
+			autoOpen: false,
+			title: "Edit Goal",
+			height: 350,
+			width: 600
+		});
+		//$('.taskrecord').draggable({
+		//	cursor: 'move',
+		//	helper: 'clone',
+		//});
+		//$('.taskrecord').disableSelection();
+		
+		//$('.container').droppable({
+		//	  accept: '.taskrecord', 
+        //		drop: function(event, ui) {
+		//			//alert($(this).html());
+		//			alert($(ui.draggable).html());
+		//			$.ajax({
+		//				type: 'POST',
+		//				url: '/tasks/25',
+		//			});
+		//		}
+		//});
+	});
+	
+	function show_new_goal()
+	{
+		$('div.new_goal').dialog('open');
+		$('#btnshownewgoal').css("display", "none");
+		return false;
+	}
+	
+	function show_edit_goal(goalid, description)
+	{
+		// Set Text Area
+		$('#edit_goal_description').val(description);
+		
+		// Set form submit info
+		$('div.edit_goal form').attr('action', '/goals/' + goalid);
+		
+		$('div.edit_goal').dialog('open');
+	}
+	
+	function ShowGoal(goal, $title)
+	{
+		var $dialog = $('<div></div>').html($(goal).html())
+			.dialog({
+				autoOpen: false,
+				title: $title
+		});
+		$dialog.dialog('open');
+	}
+</script>

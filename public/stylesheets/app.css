@@ -1,0 +1,352 @@
+/* Header Styles */
+div.header {
+	background: #081472; /*#bf4b30;*/
+	color: #ffe100;
+	padding: 0;
+	margin: 0;
+	border-bottom:groove 1px;
+	height: 26px;
+}
+
+div.logo {
+	display: none;
+}
+
+.menu {
+	position: absolute;
+	top: 0px;
+	right: 0;
+	font-family:"Arial Rounded MT Bold",Arial,sans-serif;
+}
+
+.navigation {
+	padding:0px;
+	margin:0px;
+	font-size:0px; /* Oddly, forces menu together */
+	list-style-type:none;
+}
+
+.navigation li {
+	font-size:12pt;
+	font-weight:bold;
+	color:#f5e848;
+	display:inline-block;
+	padding:0px;
+	margin:0px;
+	text-align:center;
+	vertical-align:middle;
+}
+
+/* Footer Styles */
+.footer {
+	background: #ffee73 url('/images/thumbtack_small.png') no-repeat center top; /*#bf4b30;*/
+	color: #ffe100;
+	height: 100px;
+	margin-top: -100px;
+	border-top: ridge 1px;
+	width: 100%;
+}
+
+div.linklist {
+	text-align: center;
+	width: 80%;
+	/*display: inline-block;*/
+	margin: auto;
+}
+
+#footerlinks {
+	list-style-type: none;
+	padding-top: 3em;
+	text-align: center;
+}
+
+#footerlinks li {
+	display:-moz-inline-box; 
+	-moz-box-orient:vertical;
+	display:inline-block; 
+	vertical-align:top; 
+}
+
+#footerlinks li > * {
+	display: table;
+	table-layout: fixed;
+	width: 90px;
+	overflow: hidden;
+}
+
+#footerlinks li a {
+	color: #2e3884;
+	text-decoration: none;
+}
+
+#footerlinks li a:visited {
+	color: #8f04a8;
+}
+
+#footerlinks li a:hover {
+	color: #717dd7;
+}
+
+/* Generic Content Styles */
+#content {
+	padding: 50px 10px 100px 10px;
+	text-align: center;
+	margin: auto;
+	overflow: auto;
+}
+
+img {
+	cursor: help;
+}
+
+.hidden {
+	display: none;
+}
+
+.help {
+	padding:2px 0px 0px 0px;
+}
+
+/* Specific Styles for Specific pages */
+
+/* My Tasks Page */
+div.container {
+	display:inline-block;
+	border:dashed; 
+	padding: 0px 2px 0px 1px;
+	width:191px;
+	height:394px;
+	float: left;
+	background: #ffffff;
+}
+
+div.task {
+	display:inline;
+}
+
+div.info {
+	width:130px;
+	overflow:hidden;
+	height:2em;
+}
+
+.buttons {
+	width:60px;
+	display:inline;
+	text-align:right;
+}
+
+.taskheader {
+	display:block;
+	text-align:left;
+	padding: 35px 10px 20px 10px;
+	margin: 0 20px 0 20px;
+	background: #f5e848 url('/images/thumbtack_small.png') no-repeat top;
+	-webkit-box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.5), 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    -moz-box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.5), 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.5), 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+
+.taskrecord {
+	width:165px;
+	background-color:#f5e848;
+	margin: 5px;
+	padding: 0;
+	table-layout:fixed;
+	-webkit-box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.5), 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    -moz-box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.5), 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.5), 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+
+.overflow {
+	display:none;
+	visibility: expression(this.previousSibling.scrollHeight > this.previousSibling.clientHeight ? '' : 'none');
+}
+
+.taskaction {
+	width:26px;
+}
+ 
+.tasks {
+	overflow:auto;
+	width:100%;
+	height:368px;
+} 
+
+.taskdata {
+	top:0px;
+	left:0px;
+	height:24px;
+	width: 90px;
+	overflow:hidden;
+	display:inline-block;
+	clip:rect(0px, 105px, 24px, 0px);
+	text-align: left;
+}
+
+.whiteboard{
+	display:inline-block;
+	top:1em;
+	position:relative;
+	padding: 40px 40px 40px 40px;
+	margin-left: auto;
+	margin-right: auto;
+	width:100%;
+	height:480px;
+}
+
+.createbutton {
+	float:right;
+}
+ 
+.categorycontainer {
+	border:groove;
+	border-color:#986A5A;
+	padding:10px;
+}
+ 
+div .percentcomplete
+{
+	display:none;	
+}
+
+button#btncreaterelatedgoal, button#btncreaterelatedtask, div#copygoalbuttons {
+	float:right;
+	margin: 0;
+}
+
+.taskbuttons {
+	float: right;
+	style: inline;
+}
+
+.editbutton {
+	float: left;
+}
+
+.completecontainer, .deletecontainer {
+	float:right;
+}
+ 
+/* My Goals Page */
+div.goalcontainer {
+	width:327px;
+	height:394px;
+}
+
+.goalrecord {
+	width:318px;
+}
+
+.goals {
+	overflow:auto;
+	width: 100%;
+	height: 368px;
+}
+
+.goalrecord {
+	width:298px;
+}
+
+.goalrecord tr {
+	height: 24px;
+}
+
+.goalrecord tr td:first {
+	width: 80%;
+}
+
+.goaldata {
+	top:0px;
+	left:0px;
+	height:24px;
+	width:200px;
+	overflow:hidden;
+	display:inline-block;
+	/*clip:rect(0px, 255px, 24px, 0px);*/
+}
+
+div#copygoalbuttons {
+	position: relative;
+}
+ 
+div#copygoalbuttons buttons {
+	margin: 2;
+}
+ 
+/* Reports Page */
+.reports {
+	text-align: left;
+	margin:1em;
+	padding:1em;
+	border-spacing:2em 1em;
+	border:groove;
+	border-color:#986A5A;
+}
+
+.statusreport {
+	margin:1em;
+}
+
+/* Dashboard */
+.dashboard {
+	padding: 10px;
+}
+
+.dashboard h2 {
+	color: #f5e848;
+	font-weight: bold;
+	font-size: 180%;
+}
+
+.inprogress {
+	margin: 0 15px 0 15px;
+	float: left;
+}
+
+.dailygoals {
+	margin-left: 15px;
+	float: left;
+}
+
+.useredits {
+	left: 0px;
+	display: block;
+	margin: 430px 20px 5px 20px;
+	padding: 35px;
+	background: #f5e848 url('/images/thumbtack_small.png') no-repeat top;
+	-webkit-box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.5), 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    -moz-box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.5), 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.5), 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+
+#accountwarning {
+	margin: 35px 20px 5px 20px;
+	background: #f5e848 url('/images/thumbtack_small.png') no-repeat top;
+	-webkit-box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.5), 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    -moz-box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.5), 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.5), 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+
+#dashboard_header_tasks {
+	/*float: left;*/
+	width: 191px;
+}
+
+#dashboard_header_goals {
+	/*float: left;*/
+	clear: left;
+	width: 327px;
+}
+
+.admin li {
+	border: 1px solid;
+	margin: 1em;
+	padding: 1em;
+}
+
+.admin li li {
+	border: none;
+	margin: 0;
+	padding: 0;
+}

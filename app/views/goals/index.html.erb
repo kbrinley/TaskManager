@@ -1,0 +1,24 @@
+<div class="pagebody">
+	<div id="authtoken" class="hidden"><%= form_authenticity_token %></div>
+	<div id="percentcompleteenabled" class="hidden"><%= current_user.percentcompleteenabled %></div>
+	<div class="taskheader">
+		<span>You currently have a total of <span id="countTotals"><%= @goals.count %></span> Goals.</span>
+		<div class="createbutton">
+			<button id="btnshownewgoal" class="button pill">Create New Goal</button>
+			<img class="help" alt="<%= GoalHelpText() %>" src="/images/inline_help_small_t.png" />
+		</div>
+	</div>
+	<div class='new_goal hidden'>
+		<%= render 'goals/new_goal' %>
+	</div>
+	<div class="edit_goal hidden">
+		<%= render 'goals/edit_goal' %>
+	</div>
+	<div class="whiteboard">
+		<% if @goaltypes.empty? %>
+			<h2>Error! No Goal Types defined! Please contact customer support.</h2>
+		<% else %>
+			<%= render @goaltypes %>
+		<% end %>
+	</div>
+</div>

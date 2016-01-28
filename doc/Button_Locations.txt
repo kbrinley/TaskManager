@@ -1,0 +1,26 @@
+The following is a list of the button locations and the types of buttons:
+
+Menu 	      	   	   => li.button a	P
+Mailing list signup form   => input.button	P
+Signup Form  	    	   => input.button	P
+Signin Form		   => input.button	P
+'Create' on Tasks board	   => button.button	P
+'Edit' on individual tasks => button.button	P
+'Delete' on indiv. tasks   => button.button	P
+'Edit' on Edit Task dialog => input.button	P
+'New' on New Task dialog   => input.button	P
+'Complete' on tasks	   => button.button	P
+Task completeion confirm.  => ???		x
+'Create' on Goals board	   => button.button	P
+'Edit' on individual goals => button.button	P
+'Delete' on indiv.goals	   => button.button	P
+'Edit' on Edit goal dialog => input.button	P
+'Complete' on goals 	   => button.button	P
+Confirmation dialog 	   => ???		x
+'New' on New Goal dialog   => input.button	P
+Report options	  	   => links		x
+Edit User Details	   => input.button	P
+'Edit my Task Categories'  => input.button	P
+Admin Page for users	   => input.button	P
+Forgot Password form	   => input.button	P
+Reset password form	   => input.button	P

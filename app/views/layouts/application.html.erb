@@ -1,0 +1,43 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+	<%= render 'layouts/header' %>
+	<body>
+		<div class="wrap">
+			<div class="header">
+				<div class="logo">
+					<h1>Kanban for Developers</h1>
+					<h2>Freeing up Whiteboards everywhere</h2>
+				</div>
+				<%= render 'layouts/menu' %>
+			</div>
+			<div id="content">
+				<%= yield %>
+			</div>
+		</div>
+		<div class="push"><!-- --></div>
+		
+		<div class="footer">
+			<% if ! signed_in? %>
+			<div class="action">
+				<div class="mailinglist"><%= render '/layouts/listsignup' %></div>
+				<%= render '/layouts/info' %>
+			</div>
+			<% end %>
+			<div class="linklist"><%= render 'layouts/footerlinks' %></div>
+		</div>
+		<script type="text/javascript" src="https://www.google.com/jsapi?key=ABQIAAAAgzUIsCzTZ5-EYjP4UtxMDRQBTp1QBZOI1gVxA5qOSCZI-FjpJRR8HO_nM13yH8Ql1R-z9Q5Sd47E8A">
+    	</script>
+    	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js">
+    	</script>
+    	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.2/jquery-ui.min.js">
+    	</script>
+    <script type="text/javascript" src="../../javascripts/kbd.js">
+    </script>
+    <script type="text/javascript" src="../../javascripts/outerHTML-1.0.0-min.js">
+    </script>
+    <script type="text/javascript" src="../../javascripts/jquery.mousewheel.js">
+    </script>
+    <script type="text/javascript" src="../../javascripts/jquery.jb.shortscroll.js">
+    </script>
+	</body>
+</html>

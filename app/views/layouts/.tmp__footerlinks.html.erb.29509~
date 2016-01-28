@@ -1,0 +1,12 @@
+<div class="footerbody"><center>
+	<ul class="footerlinks">
+		<li><%= link_to "FAQ", faq_path %></li>
+		<li><%= link_to "Sitemap", sitemap_path %></li>
+		<li><%= link_to "Privacy Policy", privacy_path %></li>
+		<li><%= link_to "Terms and Conditions", terms_path %></li>
+		<li><%= link_to "Contact Us", contact_path %></li>
+		<li><%= link_to "About Us", aboutus_path%></li>
+		<li><%= link_to "Help", help_path %></li>
+		<li><a href="http://blog.kanbanfordevelopers.com/">Our Blog</a></li>
+	</ul>
+</center></div>

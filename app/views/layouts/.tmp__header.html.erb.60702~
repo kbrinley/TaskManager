@@ -1,0 +1,18 @@
+<head>
+	<meta name="keywords" content="kanban, kanban developers, kanban software, task board" />
+	<meta name="description" content="Manage Development tasks better" />
+	<meta name="author" content="Sand Bridge Software" />
+	<meta name="copyright" content="September 2010" />
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+	<title><%= @title %></title>
+	<%= stylesheet_link_tag 'custom', :media => 'screen' %>
+	<%=stylesheet_link_tag 'ui-darkness/jquery-ui-dark'%>
+	<script type="text/javascript" src="../../javascripts/jquery-1.4.2.js"></script>
+	<script type="text/javascript" src="../../javascripts/jquery-ui-1.8.2.custom.min.js"></script>
+	<!--[if lte IE 7]>
+	<style>
+    	.navigation li { display:inline; }
+		.container { display:inline; }
+	</style>
+	<![endif]-->
+</head>

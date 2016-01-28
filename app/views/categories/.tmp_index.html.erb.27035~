@@ -1,0 +1,28 @@
+<% if (@user.premiumaccount) %>
+<div>
+	<% @categories.each do |edit_category| %>
+		<% form_tag('/categories/' + edit_category.id.to_s, :method => :put) do %>
+		<div class="field">
+			<%= label_tag "Label" %>
+			<%= text_field_tag "edit_category[label]", edit_category.label %>
+		</div>
+		<div class="field">
+			<%= label_tag "Size" %>
+			<%= text_field_tag "edit_category[size]", edit_category.size %>
+		</div>
+		<div class="field">
+			<%= label_tag "Order" %>
+			<%= text_field_tag "edit_category[listorder]", edit_category.listorder %>
+		</div>
+		<div class="actions">
+			<%= submit_tag "Edit Category" %>
+		</div>
+		<% end %>
+	<% end %>
+</div>
+<% else %>
+<div class="notice">
+	You must have a Premium account to edit Categories. Sign up for a Premium account 
+	<%= link_to "here", buypremium_path %>
+</div>
+<% end %>

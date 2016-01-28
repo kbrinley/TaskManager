@@ -1,0 +1,28 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+	<%= render 'layouts/header' %>
+	<% if ! signed_in? %>
+		<%= stylesheet_link_tag 'sales', :media => 'screen' %>
+	<% end %>
+	<body>
+		<div class="header">
+			<div class="hleft"></div>
+			<div class="hright"></div>
+			<div class="logo"><a href="http://www.kanbanfordevelopers.com/"><img src="/images/Logo1.png" alt="Kanban for Developers" style="border:none;" /></a></div>
+			<%= render 'layouts/menu' %>
+			<!--<div id="loadingDiv" class=".ui-dialog loading"><img src="/images/ajax-loader.gif" alt="Waiting..."></img></div>-->
+		</div>
+		<div id="content" class="body">
+			<% flash.each do |key, value| %>
+	  			<div class="flash <%= key %>"><%= value %></div>
+			<% end %> 
+			<%= yield %>
+			<div class="push"><!-- --></div>
+		</div>
+		<div class="footer">
+			<div class="fleft"></div>
+			<div class="fright"></div>
+			<%= render 'layouts/footerlinks' %>
+		</div>
+	</body>
+</html>

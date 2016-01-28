@@ -1,0 +1,71 @@
+<div class="pagebody">
+	<h2>Kanban For Developers</h2>
+	<p><h3>Frequently Asked Questions</h3></p>
+	<p class="question">What is a Kanban board?</p>
+	<p class="answer">A Kanban board is a board on which projects are managed. 
+	Each Task is represented by a sticky note or an index card and is progressed through different stages on the board.</p>
+	
+	<p class="question">What is a Task?</p>
+	<p class="answer">A Gask is some sort of cohesive unit of work. A Task may be a defect, a design, a new feature, etc. The duration of each Task may vary widely.</p>
+	
+	<p class="question">What is a Goal?</p>
+	<p class="answer">A Goal is a unit of work that can be accomplished in a set amount of time. There are 3 Goal Types, Daily goals, Weekly goals, and Monthly goals. A goal might include several related tasks, or a sub-component of a Task.</p>
+	
+	<p class="question">What software do I need to run this application?</p>
+	<p class="answer">If you can read this web page, then you probably have all that you need to run this application. Kanban for Developers is tested for the latest versions of Internet Explorer, Firefox, and Chrome, but should work on most browsers, so long as scripting is enabled.</p>
+	<h2>Tasks</h2>
+	<p class="question">How do I create new Tasks?</p>
+	<p class="answer">From 'My Tasks' page, click the 'Create Tasks' button to create a task.</p>
+	
+	<p class="question">How can I see all of the Task description?</p>
+	<p class="answer">If a Task's description is too long to fit on the Kanban board, double click on the Task to view the Description.</p>
+	
+	<p class="question">How do I edit Tasks?</p>
+	<p class="answer">To edit a Task, click the 'E' button and make the desired changes.</p>
+	
+	<p class="question">How do I delete Tasks?</p>
+	<p class="answer">If a Task has not been Delivered, then it can be Deleted by clicking the 'X' button. If a Task is deleted, the Task record and any historical information regarding the Task is deleted.</p>
+	
+	<p class="question">How do I complete a Task?</p>
+	<p class="answer">If a Task has been moved to the Delivered queue, it can be Completed by clicking the 'C' button. Completed Tasks are removed from the Kanban board, but remain in the system for reporting purposes.</p>
+	
+	<p class="question">What are Task Categories?</p>
+	<p class="answer">Task Categories are different queues which describe what state the Task is in.</p>
+	
+	<p class="question">How can I change a Task from one category to another?</p>
+	<p class="answer">You can edit the task and select which category to move it to via a drop down, or if you just need to move the Task to a different queue, but not change description, then the you can drag the Task to the other queue and drop it.</p>
+	
+	<p class="question">What is the Backlog Category?</p>
+	<p class="answer">The Backlog Category holds tasks that have not been started. New Tasks default to the Backlog category.</p>
+	
+	<p class="question">What is the In Progress Category?</p>
+	<p class="answer">The In Progress Category refers to Tasks that are actively being worked on. The system defaults the number of In Progress Tasks to 3 to limit the user in working on just a few tasks at a time.</p>
+	
+	<p class="question">What is the On Hold Category?</p>
+	<p class="answer">Tasks that have been started but are delayed, or tasks that have been assigned to someone else belong in the On Hold category.</p>
+	
+	<p class="question">What is the Ready to Demo Category?</p>
+	<p class="answer">Tasks that have been addressed, but not officially delivered go into the Ready to Demo queue. Ideally, at this point the user would demo the functionality to others, then progress it to the next queue.</p>
+	
+	<p class="question">What is the Delivered Category?</p>
+	<p class="answer">After being addressed and demoed (if necessary), the Task moves to the Delivered queue. Here, the user can 'Complete' a task, thus removing it from the Kanban board. The task and its history remains in the system, but the Task itself cannot be worked on anymore.</p>
+	
+	<h2>Tasks</h2>
+	<p class="question">How do I create new Goals?</p>
+	<p class="answer">From the 'My Goals' page, click the 'Create Goals' button to create a goal.</p>
+	
+	<p class="question">How can I see all of the Goal description?</p>
+	<p class="answer">If a Goal's description is too long to fit on the Kanban board, double click on the Goal to view the Description.</p>
+	
+	<p class="question">How do I edit Goals?</p>
+	<p class="answer">To edit a Goal, click the 'E' button and make the desired changes.</p>
+	
+	<p class="question">How do I delete Goals?</p>
+	<p class="answer">A Goal can be Deleted by clicking the 'X' button. If a Goal is deleted, the Goal record and any historical information regarding the Goal is deleted.</p>
+	
+	<p class="question">How do I complete a Goal?</p>
+	<p class="answer">A Goal can be Completed by clicking the 'C' button. Completed Goals are removed from the Kanban board, but remain in the system for reporting purposes.</p>
+	
+	<p class="question">What are Goal Types?</p>
+	<p class="answer">Goal Types define the Goal based on time it is estimated to complete the Goal. Daily Goals can be completed in one day, Weekly Goals can be completed within 1 week, while Monthly Goals can be completed within 1 Month.</p>
+</div>

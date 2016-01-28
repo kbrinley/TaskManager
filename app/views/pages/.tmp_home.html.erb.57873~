@@ -1,0 +1,18 @@
+<div class="body">
+	<p>Kanban for Developers: Easy-to-use Kanban board for Software Development</p>
+	<p>Features:
+		<ul>
+			<li>Easily create and manage tasks and goals for your current project</li>
+			<li>Drag and drop interface to progress tasks</li>
+			<li>Have your curent Project, task, and goal status at your finger tips with built-in reports</li>
+			<li>Keep managers in the loop with Daily or Weekly status reports</li>
+		</ul>
+	
+	<p><h4><%= link_to "Sign up now!", signup_path %></h4></p>
+</div>
+<script>
+	$(document).ready(function() {
+		$('div.salesimage').css("background", "url('/images/sales_home.png') no-repeat");	
+	});
+	
+</script>

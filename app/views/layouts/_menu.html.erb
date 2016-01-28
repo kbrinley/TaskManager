@@ -1,0 +1,18 @@
+		<div class="menu">
+			<ul class="navigation">		
+				<% if signed_in? %>
+					<li class="left pill button"><%= link_to "My Tasks", {:controller => "tasks", :action => "index", :id => @current_user.id} %></li>
+					<li class="middle pill button"><%= link_to "My Goals", {:controller => "goals", :action => "index", :id => @current_user.id} %></li>
+					<li class="middle pill button"><%= link_to "Reports", {:controller => "reports", :action => "index", :id => @current_user.id} %></li>
+					<li class="middle pill button"><%= link_to "Dashboard", {:controller => "users", :action => "show", :id => @current_user.id} %></li>
+					<li class="middle pill button"><%= link_to "Sign out", signout_path %></li>
+				<% else %>
+					<li class="left pill button"><%= link_to "Home", root_path %></li>
+					<li class="middle pill button"><%= link_to "Tour", tour_path %></li>
+					<li class="middle pill button"><%= link_to "Pricing", pricing_path %></li>
+					<li class="middle pill button"><%= link_to "Resources", links_path %></li>
+					<li class="middle pill button"><%= link_to "Create Account", signup_path %></li>
+					<li class="middle pill button"><%= link_to "Sign in", signin_path %></li>
+				<% end %>
+			</ul>
+		</div>

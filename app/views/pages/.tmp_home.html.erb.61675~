@@ -1,0 +1,21 @@
+<div class="homebody">
+	<h3>Kanban for Developers: Freeing up White boards everywhere</h3>
+	<p>Kanban for Developers is an electronic Kanban board designed for Software Development. Replace your current white board and sticky note system with an electronic system available anywhere. Or, dive into Lean software development with our easy-to-use system.</p>
+	<p>Features:
+		<ul>
+			<li class="bulletpoint">Easy-to-use Kanban board for Software Development</li>
+			<li class="bulletpoint">Easily create and manage tasks and goals for your current project</li>
+			<li class="bulletpoint">Drag and drop interface to progress tasks</li>
+			<li class="bulletpoint">Have your curent Project, task, and goal status at your finger tips with built-in reports</li>
+			<li class="bulletpoint">Keep managers in the loop with Daily or Weekly status reports</li>
+		</ul>
+	</p>
+	<p><a href="http://eepurl.com/2Zsk">Signup here for our Newsletter.</a></p>
+</div>
+<!--
+	<table style="width:100%;">
+		<tr>
+			<td><%= render '/layouts/listsignup' %></td>
+		</tr>
+	</table>-->
+

@@ -1,0 +1,2 @@
+<p><h2>Kanban for Developers is currently in private beta.</h2></p>
+<p><%= link_to "Sign up now!", signup_path %></p>

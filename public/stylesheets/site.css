@@ -1,0 +1,170 @@
+/* Reload */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	/* font-weight: inherit;
+	font-style: inherit;*/
+	/*font-size: 100%;*/
+	font-family: inherit;
+	vertical-align: baseline;
+}
+
+/* Generic Styles */
+html, body {height: 100%;}
+
+.wrap {min-height: 100%;}
+
+/*Opera Fix*/
+body:before {
+	content:"";
+	height:100%;
+	float:left;
+	width:0;
+	margin-top:-32767px;/
+}
+
+/* Generic Styles */
+body {
+	background: url('/images/corkboard2.jpg'); /*#4b5cd7;*/ /*#0b5fa5;*/
+	margin: 0;
+	padding: 0;
+}
+
+img {
+	border: none;
+}
+
+.push {
+	height: 2em;
+}
+
+#content #normal_body {
+	width: 600px;
+	padding: 35px 10px 20px 10px;
+	background: #ffffff url('/images/thumbtack_small.png') no-repeat top;
+	margin: auto;
+	-webkit-box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.5), 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    -moz-box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.5), 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.5), 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+
+#content #normal_body p {
+	line-height: 1.2em;
+	margin-bottom: 0.7em;
+}
+
+#content #wide_body {
+	width: 900px;
+	padding: 35px 10px 20px 10px;
+	background: #ffffff url('/images/thumbtack_small.png') no-repeat top;
+	margin: auto;
+	-webkit-box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.5), 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    -moz-box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.5), 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.5), 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+
+#content p, #content h3 {
+	text-align: left;
+}
+
+#content li{
+	list-style: none;
+}
+
+.bulletpoint {
+	font-size:medium;
+}
+
+.center {
+	text-align: center;
+	width: 100%;
+}
+
+.center h3 {
+	width: 38%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 1em;
+}
+
+/* Specific Styles for Specific pages */
+
+/* Home page */
+#home_body div {
+	background: #ffffff url('/images/thumbtack_small.png') no-repeat top;
+	-webkit-box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.5), 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    -moz-box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.5), 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.5), 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+
+#tagline {
+	width: 30%;
+	padding: 35px 10px 20px 10px;
+	margin: 0px 20px 10px 20px;
+	float: left;
+	clear: left;
+	text-align: left;
+	font-weight: 700;
+	font-family: 'Muli', arial, sans-serif;
+}
+
+#screenshot {
+	width: 30%;
+	left: 0px;
+	padding: 35px 10px 10px 10px;
+	margin: 20px;
+	clear: left;
+	float: left;
+}
+
+#intro {
+	width: 50%;
+	right: 0px;
+	padding: 35px 10px 20px 10px;
+	margin: 0 20px 10px 20px;
+	float: right;
+	text-align: left;
+	font-family: 'Muli', arial, sans-serif;
+}
+
+#intro p {
+	margin-bottom: 0.5em;
+}
+
+#intro ul li.bulletpoint {
+	margin: 0 0 0 2em;
+	list-style: circle;
+}
+
+/* FAQ page */
+.question {
+	font-size:larger;
+	font-weight:bold;
+	margin: 0.5em 0;
+}
+
+.answer {
+	font-size:large;
+	margin-bottom: 1em;
+}
+
+/* Privacy Policy and Terms and Condition Pages */
+.policy {
+	font-family:arial;
+	text-align: left; 
+}
+
+/* Sitemap*/
+.sitemap {
+	text-align: left;
+	line-height: 1.75em;
+}

@@ -1,0 +1,24 @@
+<div class="pagebody">
+	<div id="authtoken" class="hidden"><%= form_authenticity_token %></div>
+	<div id="percentcompleteenabled" class="hidden"><%= current_user.percentcompleteenabled %></div>
+	<div class="taskheader">
+		<span>Welcome <%= h current_user.email %>. You have <span id="activeTasks"><%= @active_task_count %></span> active Tasks. You have created a total of <span id="countTotals"><%= @tasks.count %></span> Tasks.</span>
+		<div class="createbutton">
+			<button class="button pill" id="btnshownewtask">Create New Task</button>
+			<img style="padding:2px 0px 0px 0px;" alt="<%= TaskHelpText() %>" src="/images/inline_help_small_t.png" onclick="ShowHelp(this);" />
+		</div>
+	</div>
+	<div class='new_task' style="display:none;">
+		<%= render 'tasks/new_task' %>
+	</div>
+	<div class="edit_task" style="display:none;">
+		<%= render 'tasks/edit_task' %>
+	</div>
+	<div class="whiteboard">
+		<% if @user.category.empty? %>
+			<h2>Error! No User categories defined!</h2>
+		<% else %>
+			<%= render @categories %>
+		<% end %>
+	</div>
+</div>

@@ -1,0 +1,8 @@
+<div class="container" max_items="<%= h category.size %>" label_text="<%= h category.label %> (<%= h category.size %>)" category_id="<%= h category.id %>">
+	<div class="label"><%= h category.label %> (<%= h category.size %>) <img class="help" style="padding:2px 0px 0px 0px;" alt="<%= CategoryHelpText(category.label) %>" src="/images/inline_help_small_t.png" /></div>
+	<div id="category_id" class="hidden"><%= h category.id %></div>
+	<div id="category_label" class="hidden"><%= h category.label %></div>
+	<div class="tasks">
+		<%= render category.task %>
+	</div>
+</div>

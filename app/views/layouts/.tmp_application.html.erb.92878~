@@ -1,0 +1,30 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+	<%= render 'layouts/header' %>
+	<% if ! signed_in? %>
+		<%= stylesheet_link_tag 'sales', :media => 'screen' %>
+	<% end %>
+	<body>
+		<div class="header">
+			<div class="hleft"></div>
+			<div class="hright"></div>
+			<div class="logo"><img src="/images/Logo1.png" alt="Kanban for Developers" /></div>
+			<div class="salesimage"><!-- 180 height --></div>
+			<%= render 'layouts/menu' %>
+			
+		</div>
+		<div id="content" class="round wrapper">
+    		<% flash.each do |key, value| %>
+      			<div class="flash <%= key %>"><%= value %></div>
+    		<% end %> 
+    		<%= yield %>
+  			<div class="push"></div>
+		</div>
+		<div class="footer menu">
+			<ul class="navigation">
+				<li><%= link_to "Contact Us", contact_path %></li>
+				<li><%= link_to "About Us", aboutus_path%></li>
+			</ul>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,9 @@
+---First, create the Users model--
+--Then, create the Pages controller--
+--Setup the home page, with a link to the Signup page--
+--Next, create the Users controller--
+--Make the Signup page functional--
+Allow users to edit their own info
+Allow admins to view all users (index)
+Allow admins to destroy users
+Allow admins to make other users Premium account users

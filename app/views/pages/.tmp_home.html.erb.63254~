@@ -1,0 +1,9 @@
+<div class="body">
+	<p><%= link_to "Sign up now!", signup_path %></p>
+</div>
+<script>
+	$(document).ready(function() {
+		$('div.salesimage').css("background", "url('/images/sales_home.png') no-repeat");	
+	});
+	
+</script>

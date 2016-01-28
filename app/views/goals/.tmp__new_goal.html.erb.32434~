@@ -1,0 +1,19 @@
+	<div class="edit">
+	<% form_for @goal do |f| %>
+		<%= f.error_messages %>
+		<div class="field">
+			<%= select :goal, :goaltype_id, @goaltypes.map {|g| [g.label, g.id]} %>
+		</div>
+		<div class="field">
+			<%= f.label :description %>
+			<%= f.text_area :description, :rows => 5, :cols => 50 %>
+		</div>
+		<div class="field">
+			<%= f.label "Percent Complete" %>
+			<%= f.text_field :percentcomplete, :maxlength => 3 %>
+		</div>
+		<div class="actions">
+			<%= f.submit "Create Goal", :class => "button pill" %>
+		</div>
+	<% end %>
+	</div>

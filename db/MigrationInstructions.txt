@@ -1,0 +1,12 @@
+Setup database on MySQL
+
+First, remove all double quotes (") from dump file
+Remove first line of file (starts with Parma)
+Remove all lines regarding CREATE TABLE (migration does this)
+Remove all lines regarding indexes (migration does this too)
+Remove all lines creating Goal Types (and this)
+For Users, change Admin/Premium flag from T/F to 1/0 (yes, 1 = T, 0 = F)
+
+Code changes:
+Change all code to use MySQL via database.yml
+Syntax is different, so numerous errors will need to be fixed.

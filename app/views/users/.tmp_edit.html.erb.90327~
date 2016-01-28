@@ -1,0 +1,31 @@
+<div class="pagebody">
+	<h3>Edit User Settings</h3>
+
+<% form_for(@user) do |f| %>
+	<%= f.error_messages %>
+	<div class="field">
+		<%= f.label "Email (This is your login name and cannot be changed)" %><br />
+		<%= f.label @user.email %>
+	</div>
+	<div class="field">
+		<%= f.label :name %><br />
+		<%= f.text_field :name %>
+	</div>
+	<div class="field">
+		<%= f.label :percentcompleteenabled %><br />
+		<%= f.check_box :percentcompleteenabled %>
+	</div>
+	<div class="field">
+		<%= f.label :password %><br />
+		<%= f.password_field :password %>
+	</div>
+	<div class="field">
+		<%= f.label :password_confirmation, "Confirmation" %><br />
+		<%= f.password_field :password_confirmation %>
+	</div>
+	<div class="actions">
+		<%= f.submit "Edit User Details", :class => "button pill" %>
+	</div>
+
+<% end %>
+</div>
